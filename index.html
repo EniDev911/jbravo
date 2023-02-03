@@ -13,7 +13,7 @@
 
 <body>
 	<!-- navigation -->
-	<nav class="navbar navbar-expand-md sticky-top bg-body-tertiary shadow p-0">
+	<nav class="navbar navbar-expand-md sticky-top shadow p-0">
 		<div class="container">
 			<!-- MARCA - LOGO -->
 			<a href="#" class="navbar-brand">ALEJANDRA BRAVO PINO</a>
@@ -57,18 +57,35 @@
 			<h3 class="text-center display-4 text-uppercase fw-bold text-white mb-4">Sobre mí</h3>
 			<div class="container pb-4">
 				<div class="row align-items-start">
-					<div class="col-10 col-md-4 mx-auto p-3  shadow mb-3" style="background: #f8f0f190">
-						<div class=""
+					<div class="col-10 col-md-4 mx-auto p-3 shadow mb-3 position-relative" style="background: #f8f0f190">
+						<span class="position-absolute top-0 start-50 translate-middle p-2 border border-light text-light fs-6"
+							style="background-color: lightseagreen">
+							RECOMENDACIONES
+							<span class="visually-hidden"></span>
+						</span>
+						<!-- <div class=""
 							style="background: url(./assets/imagenes/perfil.webp) ; background-size: 100% 100%;height: 320px">
-						</div>
+						</div> -->
+						<a id="zl-url" class="zl-url" href="https://www.doctoralia.cl/alejandra-bravo-pino/psicologo/iquique"
+							rel="nofollow" data-zlw-doctor="alejandra-bravo-pino" data-zlw-type="big" data-zlw-opinion="true"
+							data-zlw-hide-branding="true">Alejandra Bravo Pino - Doctoralia.cl</a>
+						<script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
 					</div>
-					<div class="col-md-6 p-3 mx-auto" style="background: #f8f0f190">
+					<div class="col-md-6 p-3 mx-auto position-relative" style="background: #f8f0f190">
+						<span class="position-absolute top-0 start-50 translate-middle p-2 border border-light text-light fs-6"
+							style="background-color: lightseagreen">
+							PERFIL
+							<span class="visually-hidden"></span>
+						</span>
 						<div class="card p-3 bg-light shadow fs-5" style="color: #555">
 							<p>Soy Psicóloga Clínica y Educacional. Poseo más de 9 años de experiencia en el trabajo con niños y
 								adolescentes, además de perfeccionamiento en psicoterapia infantil, adolescencia y familia.</p>
 							<p>He participado en estudios de evaluación psicológica, que me ha permitido desarrollar una gran
 								experiencia en la evaluación psicológica tanto de niños y adultos.</p>
 						</div>
+					</div>
+					<div class="col-10 col-md-6 mx-auto">
+
 					</div>
 				</div>
 			</div>
@@ -126,13 +143,14 @@
 						</button>
 					</div>
 					<!-- IMAGEN 06 -->
-					<div class="col-10 col-md-6 col-lg-4 my-2 position-relative">
+					<div class="col-10 col-md-6 col-lg-4 my-2 mx-auto position-relative">
 						<div class="border border-3 border-light shadow"
 							style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 290px">
 						</div>
 						<button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="{expand()}">
 							Expandir
 						</button>
+						<a name="contacto"></a>
 					</div>
 				</div>
 			</div>
@@ -148,34 +166,66 @@
 			</div>
 		</section> -->
 		<!-- SECTION CONTACTO -->
-		<section id="contacto" class="py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-10 col-md-4">
+		<section class="py-5 contacto">
+			<div class="container shadow p-4 bg-light position-relative">
+				<span class="position-absolute top-0 start-50 translate-middle p-2 border border-light text-light fs-4"
+					style="background-color: lightseagreen">
+					CONTACTO
+					<span class="visually-hidden">Contacto</span>
+				</span>
+				<div class="row py-3">
+					<div class="col-10 col-md-5 mx-auto">
+						<p>Realice todas sus consultas a través del formulario, o contactar por medio de los siguientes
+							medios:</p>
 						<div class="d-flex">
-							<i class="fa-solid fs-3 fa-location-dot me-3 text-info"></i>
-							<p>Direccion, Iquique</p>
+							<i class="fa-solid fs-3 fa-location-dot me-3 text-secondary"></i>
+							<p>Av. Ramón Perez Opazo n°3136, Alto Hospicio</p>
 						</div>
 						<div class="d-flex">
-							<i class="fa-brands fs-3 fa-whatsapp me-3 text-info"></i>
-							<p>+569-999999</p>
+							<i class="fa-brands fs-3 fa-whatsapp me-3 text-secondary"></i>
+							<p>+569 86363503</p>
+						</div>
+						<div class="d-flex">
+							<i class="fa-solid fa-envelope fs-3 me-3 text-secondary"></i>
+							<p>ps.alejandrabravo@gmail.com</p>
+						</div>
+						<div class="d-flex">
+							<i class="fa-brands fa-facebook fs-3 me-3 text-secondary"></i>
+							<p>Psicóloga Alejandra Bravo</p>
 						</div>
 					</div>
 					<div class="col-10 col-md-6 mx-auto">
+						<!-- FORMULARIO -->
 						<form action="" class="w-100">
 							<div class="form-floating mb-3">
 								<input type="email" class="form-control" id="floatingInput" placeholder="usuario@ejemplo.com">
-								<label for="floatingInput">Correo electrónico</label>
+								<label for="floatingInput">Su nombre y apellido</label>
 							</div>
-							<div class="form-floating">
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="floatingInput" placeholder="usuario@ejemplo.com">
+								<label for="floatingInput">Su correo electrónico</label>
+							</div>
+							<div class="form-floating mb-3">
 								<input type="tel" class="form-control" id="floatingPassword" placeholder="Teléfono">
 								<label for="floatingPassword">Su teléfono</label>
 							</div>
-							<button class="btn btn-info w-100 mt-3 text-light">Enviar</button>
+							<div class="form-floating">
+								<textarea class="form-control" id="floatingPassword" placeholder="Su mensaje" rows="6"
+									style="height:100px" required></textarea>
+								<label for="floatingPassword">Su mensaje</label>
+							</div>
+							<button class="btn w-100 mt-3 text-light" style="background-color: lightseagreen;">Enviar</button>
 						</form>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section id="reservas">
+			<!-- Google Calendar Appointment Scheduling begin -->
+			<iframe
+				src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3FIzw8fhU-W38v75HETauIJ2-2RQO-j21gtzwEjXohLCQqIA2PGK-kcxCWdaRClcggFHpkfquN?gv=true"
+				style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+			<!-- end Google Calendar Appointment Scheduling -->
 		</section>
 	</main>
 	<!-- Footer -->
@@ -193,6 +243,12 @@
 	<script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
 	<!-- MAIN JS -->
 	<script src="./assets/js/main.js"></script>
+	<!-- EMAILJS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+
+	</script>
 </body>
 
 </html>

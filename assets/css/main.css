@@ -4,7 +4,8 @@
 }
 
 nav {
-	background: linear-gradient(#f8fffe, #f0f0f0);
+	background: linear-gradient(#f8fffe70, #f0f0f030);
+	backdrop-filter: blur(1.5rem) !important;
 }
 
 .nav-link {
@@ -59,6 +60,10 @@ section.galery {
 
 section.reservas {
 	box-shadow: inset -2px -3px 20px #00000040;
+}
+
+section.contacto {
+	background: linear-gradient(#7ad1c8, #37BDC1, #a5eae7);
 }
 
 hr {
