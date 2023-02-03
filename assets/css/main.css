@@ -1,23 +1,64 @@
+:root {
+	--content-bg: #f5576c;
+	--secondary: #15d9df;
+}
+
 nav {
-	background: linear-gradient(#fff8f9,#f0f0f0);
+	background: linear-gradient(#f8fffe, #f0f0f0);
 }
 
 .nav-link {
 	padding: 15px;
 }
 
+.header {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-image: url("../imagenes/hero4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+	color: rgb(21, 110, 105);
+	text-align: center;
+}
+
+.header h1 {
+	font-weight: 500;
+	text-decoration: overline;
+	font-size: 3.2em;
+	margin: 10% 0;
+	color: rgb(36, 97, 101);
+}
+
+.header a {
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+	left: 0;
+	background-color: rgba(161, 231, 255, 0.4);
+	text-decoration: none;
+	color: lightseagreen;
+	opacity: 0.6;
+	font-size: 2.5em;
+	padding: 0.1em 0;
+	transition: 0.3s ease;
+	transition-property: background-color;
+}
+
+
 section.about-me {
-	background: linear-gradient(#ff8099,#ff9299);
-	box-shadow: inset -2px -3px 20px  #00000040;
+	box-shadow: inset -2px -3px 20px #00000040;
 }
 
 section.galery {
-	background: linear-gradient(#ff9299, #ff8799);
-	box-shadow: inset -2px -3px 20px  #00000040;
+	background: linear-gradient(#7ad1c8, #37BDC1, #a5eae7);
 }
+
 section.reservas {
-	background: linear-gradient(#ff9299, #ff8799);
-	box-shadow: inset -2px -3px 20px  #00000040;
+	box-shadow: inset -2px -3px 20px #00000040;
 }
 
 hr {
@@ -32,13 +73,21 @@ div[style*="background: url"] {
 	transition-duration: .2s;
 }
 
-@media(hover: hover){
+@media(hover: hover) {
 	div[style*="background: url"]:hover {
 		opacity: .7;
 	}
+
 	.nav-link:hover {
-		background:#fa5252;
+		background: var(--secondary);
 		height: 100%;
 		color: white;
+	}
+
+	.header a:hover {
+		background-color: var(--secondary);
+		color: #fff;
+		border: none;
+		opacity: 1;
 	}
 }
