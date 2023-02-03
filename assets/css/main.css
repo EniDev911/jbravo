@@ -1,0 +1,44 @@
+nav {
+	background: linear-gradient(#fff8f9,#f0f0f0);
+}
+
+.nav-link {
+	padding: 15px;
+}
+
+section.about-me {
+	background: linear-gradient(#ff8099,#ff9299);
+	box-shadow: inset -2px -3px 20px  #00000040;
+}
+
+section.galery {
+	background: linear-gradient(#ff9299, #ff8799);
+	box-shadow: inset -2px -3px 20px  #00000040;
+}
+section.reservas {
+	background: linear-gradient(#ff9299, #ff8799);
+	box-shadow: inset -2px -3px 20px  #00000040;
+}
+
+hr {
+	margin: 0;
+	color: white;
+	position: relative;
+}
+
+
+div[style*="background: url"] {
+	transition-property: opacity;
+	transition-duration: .2s;
+}
+
+@media(hover: hover){
+	div[style*="background: url"]:hover {
+		opacity: .7;
+	}
+	.nav-link:hover {
+		background:#fa5252;
+		height: 100%;
+		color: white;
+	}
+}
