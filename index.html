@@ -42,8 +42,7 @@
 					</li>
 					<!-- RESERVAS -->
 					<li class="nav-item">
-						<a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA="
-							class="nav-link">Reservas</a>
+						<a href="#reservas" class="nav-link">Reservas</a>
 					</li>
 					<!-- OTRAS DUDAS -->
 					<li class="nav-item dropdown">
@@ -55,10 +54,11 @@
 							<li><a class="dropdown-item" href="#formas-de-pago">Formas de pago</a></li>
 							<!-- TIPOS DE ATENCIÓN -->
 							<li><a class="dropdown-item" href="#tipos-de-atencion">Tipos de atención</a></li>
+							<!-- RECURSOS DIGITALES -->
 							<li>
 								<hr class="dropdown-divider">
 							</li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li><a class="dropdown-item" href="#">Recursos digitales</a></li>
 						</ul>
 					</li>
 					<!-- CONTACTO -->
@@ -119,15 +119,16 @@
 		</section>
 		<hr>
 		<!-- RESERVAS SECTION -->
-		<section id="reservas">
+		<section id="reservas" class="position-relative py-4">
+			<div class="text-center w-100 position-absolute" style="top: -15px">
+				<a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA="
+					target="ireservas" class="btn btn-success btn-lg rounded-0">CALENDARIO</a>
+			</div>
 			<iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA="
-				width="100%" height="700" frameborder="0" name="ireservas">
+				width="100%" height="600" frameborder="0" name="ireservas" id="iframe_reservas">
 			</iframe>
 			<!-- <a href="javascript:window.ireservas.history.go(-1)">Atrás</a> -->
-			<a href="javascript:window.ireservas.history.back()">Atrás</a>
-			<script>
-				console.log(window.ireservas)
-			</script>
+			<!-- https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA= -->
 		</section>
 		<hr>
 		<!-- FORMAS DE PAGO -->
@@ -173,7 +174,7 @@
 					<!-- PAGO PARTICULAR -->
 					<div class="col-10 col-md-6 col-lg-4 mx-auto">
 						<div class="card bg-light">
-							<img src="assets/imagenes/particular.png" alt="" class="card-img-top">
+							<img src="assets/imagenes/particular-isapres.jpeg" alt="" class="">
 							<div class="card-body">
 								<h5 class="card-title text-center">Particular o Isapres</h5>
 								<div class="accordion" id="accordionExample">
