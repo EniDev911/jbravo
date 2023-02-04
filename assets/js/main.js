@@ -19,4 +19,6 @@ window.expand = expand;
 })();
 
 emailjs.send("default_service")
-
+	.then((res) => {
+		comsole.log('EXITO', res.status, res.text)
+	})
