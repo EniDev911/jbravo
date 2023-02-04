@@ -18,11 +18,41 @@ window.expand = expand;
 	emailjs.init("vr5VeZVQQcOECM0u");
 })();
 
-function handleSubmit(event) {
-	event.preventDefault();
-	const form = event.target
-	alert(form)
+// function handleSubmit(event) {
+// 	event.preventDefault();
+// 	const form = event.target
+// 	emailjs.send("service_3ez48bg", "template_voxdrdo", form, "vr5VeZVQQcOECM0u")
+// 		.then((res) => {
+// 			console.log('EXITO', res.status, res.text)
+// 		})
+// 		.catch((err) => {
+// 			console.log(err.message)
+// 		})
+// }
+function sendEmail() {
+
+	const name = document.getElementById("name").value,
+		email = document.getElementById("email").value,
+		phone = document.getElementById("email").value,
+		message = document.getElementById("message").value,
+		contactParams = {
+			name,
+			email,
+			phone,
+			message
+		}
+
+	emailjs.send("service_3ez48bg", "template_voxdrdo", contactParams, "vr5VeZVQQcOECM0u")
+		.then((res) => {
+			console.log('EXITO', res.status, res.text);
+			alert("ENVIADO");
+		})
+		.catch((err) => {
+			console.log(err.message)
+		})
 }
+
+
 
 
 function mostrarCalendario(select) {
