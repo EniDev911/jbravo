@@ -88,7 +88,32 @@ div[style*="background: url"] {
 	object-fit: cover;
 }
 
+details>summary {
+	list-style-type: '▶️';
+}
+
+details[open]>summary {
+	list-style-type: '🔽';
+}
+
+details {
+	border: 1px solid gray;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+}
+
+details summary {
+	cursor: pointer;
+	transition: margin .3s ease-out;
+}
+
+details[open]>summary {
+	margin-bottom: 0.5rem;
+}
+
+
 @media(hover: hover) {
+
 	div[style*="background: url"]:hover {
 		opacity: .7;
 	}
@@ -105,5 +130,36 @@ div[style*="background: url"] {
 		border: none;
 		opacity: 1;
 	}
+
+}
+
+@media (max-width: 768px) {
+	.header h1 {
+		position: absolute;
+		top: 50%;
+		font-weight: 500;
+		text-decoration: overline;
+		font-size: 1.9em;
+		text-align: center;
+		width: 100%;
+		margin: 10% 0;
+		color: rgb(36, 97, 101);
+	}
+
+	.header h2 {
+		position: absolute;
+		top: 70%;
+	}
+
+	.card-img-top {
+		width: 100%;
+		height: 48vw;
+		object-fit: cover;
+	}
+
+	.logo {
+		display: none;
+	}
+
 
 }

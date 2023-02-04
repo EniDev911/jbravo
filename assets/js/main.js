@@ -18,7 +18,17 @@ window.expand = expand;
 	emailjs.init("vr5VeZVQQcOECM0u");
 })();
 
-emailjs.send("default_service")
-	.then((res) => {
-		comsole.log('EXITO', res.status, res.text)
-	})
+function handleSubmit(event) {
+	event.preventDefault();
+	const form = event.target
+	alert(form)
+}
+
+
+function mostrarCalendario(select) {
+	if (select.value === 'online') {
+		document.getElementById('hidden_calendar_online').style.display = "block";
+	} else {
+		document.getElementById('hidden_div').style.display = "none";
+	}
+} 
