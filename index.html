@@ -26,8 +26,8 @@
 		<div class="container">
 			<!-- MARCA - LOGO -->
 			<a href="#" class="navbar-brand position-absolute logo" style="top: 1px">
-				<img src="./assets/imagenes/logotransparent.png" alt="logo" width="110" height="110" class="d-inline-block align-text-top"
-					style="filter: drop-shadow(1px 2px 6px #1039f040);">
+				<img src="./assets/imagenes/logotransparent.png" alt="logo" width="110" height="110"
+					class="d-inline-block align-text-top" style="filter: drop-shadow(1px 2px 6px #1039f040);">
 			</a>
 			<!-- BOTON MENÚ HAMBURGUESA -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,7 +42,8 @@
 					</li>
 					<!-- RESERVAS -->
 					<li class="nav-item">
-						<a href="#reservas" class="nav-link">Reservas</a>
+						<a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA="
+							class="nav-link">Reservas</a>
 					</li>
 					<!-- OTRAS DUDAS -->
 					<li class="nav-item dropdown">
@@ -119,10 +120,14 @@
 		<hr>
 		<!-- RESERVAS SECTION -->
 		<section id="reservas">
-			<iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA=" 
-				width="100%"
-				height="700" frameborder="0">
+			<iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3PQdrqhsnekk_gMDgPbjECbXXvx8iI4YS3BSA="
+				width="100%" height="700" frameborder="0" name="ireservas">
 			</iframe>
+			<!-- <a href="javascript:window.ireservas.history.go(-1)">Atrás</a> -->
+			<a href="javascript:window.ireservas.history.back()">Atrás</a>
+			<script>
+				console.log(window.ireservas)
+			</script>
 		</section>
 		<hr>
 		<!-- FORMAS DE PAGO -->
@@ -384,7 +389,6 @@
 					referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
 			</div>
 		</section>
-
 	</main>
 	<!-- Footer -->
 	<footer class="text-center p-3" style="background: lightseagreen; color:white;">
