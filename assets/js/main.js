@@ -35,8 +35,18 @@ function showMessage() {
 	})
 }
 
+// LIMPIAR CAMPOS
+function cleanBox(){
+		const name = document.getElementById("name"),
+		email = document.getElementById("email"),
+		phone = document.getElementById("phone"),
+		message = document.getElementById("message")
+		name.value = ''
+		email.value = ''
+		phone.value = ''
+		message.value = ''
+}
 // EMAILJS
-
 function sendEmail() {
 	const name = document.getElementById("name").value,
 		email = document.getElementById("email").value,
@@ -52,6 +62,7 @@ function sendEmail() {
 		.then((res) => {
 			console.log('EXITO', res.status, res.text);
 			showMessage();
+			cleanBox();
 		}, (error) => {
 			console.log('FAILED...', error);
 		})
