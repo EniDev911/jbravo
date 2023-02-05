@@ -16,7 +16,6 @@ window.expand = expand;
 // EMAILJS
 
 function sendEmail() {
-
 	const name = document.getElementById("name").value,
 		email = document.getElementById("email").value,
 		phone = document.getElementById("phone").value,
@@ -27,7 +26,6 @@ function sendEmail() {
 			phone,
 			message
 		}
-	
 	emailjs.send("service_3ez48bg", "template_voxdrdo", contactParams, "vr5VeZVQQcOECM0u-")
 		.then((res) => {
 			console.log('EXITO', res.status, res.text);
@@ -45,10 +43,3 @@ document.getElementById("form").addEventListener("submit", function(event){
 	sendEmail();
   });
 
-function mostrarCalendario(select) {
-	if (select.value === 'online') {
-		document.getElementById('hidden_calendar_online').style.display = "block";
-	} else {
-		document.getElementById('hidden_div').style.display = "none";
-	}
-} 
