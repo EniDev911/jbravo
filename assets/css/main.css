@@ -4,12 +4,17 @@
 }
 
 nav {
-	background: linear-gradient(#f8fffe70, #f0f0f030);
-	backdrop-filter: blur(1.5rem) !important;
+	/*background: linear-gradient(#f8fffe, #f0f0f030);*/
+	background: #eee;
+	/*backdrop-filter: blur(1.5rem) !important;*/
 }
 
 .nav-link {
 	padding: 15px;
+}
+
+:target {
+	scroll-margin-top: 80px;
 }
 
 .header {
