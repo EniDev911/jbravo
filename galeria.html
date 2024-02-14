@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#ffffff">
   <!-- BOOTSTRAP CSS	 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- GALERIA CSS -->
   <link rel="stylesheet" href="./assets/css/galeria.css">
   <!-- ANIMATE CSS	 -->
@@ -24,150 +24,157 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md sticky-top shadow p-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow" aria-label="Offcanvas navbar large">
     <div class="container">
-      <!-- MARCA - LOGO -->
       <a href="#" class="navbar-brand position-absolute logo" style="top: 1px">
         <img src="./assets/imagenes/logotransparent.png" alt="logo" width="110" height="110"
-          class="d-inline-block align-text-top" style="filter: drop-shadow(1px 2px 6px #1039f040);">
+        class="d-inline-block align-text-top" style="filter: drop-shadow(1px 2px 6px #1039f040);">
       </a>
-      <!-- BOTON MENÚ HAMBURGUESA -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <!-- SOBRE MÍ -->
-          <li class="nav-item">
-            <a href="/#sobre-mi" class="nav-link">Sobre mí</a>
+      <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <img src="./assets/imagenes/logotransparent.png" alt="logo" width="75" height="75"
+          class="d-inline-block align-text-top" style="filter: drop-shadow(1px 2px 6px #1039f040);" align="center">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- SOBRE MÍ -->
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a href="/#sobre-mi" class="nav-link">Sobre mí</a>
+            </li>
+            <!-- RESERVAS -->
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a href="/#reservas" class="nav-link">Reservas</a>
+            </li>
+            <!-- OTRAS DUDAS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Otras consultas
+            </a>
+            <ul class="dropdown-menu">
+              <!-- FORMAS DE PAGO -->
+              <li data-bs-dismiss="offcanvas"><a class="dropdown-item" href="/#formas-de-pago">Formas de pago</a></li>
+              <!-- TIPOS DE ATENCIÓN -->
+              <li data-bs-dismiss="offcanvas"><a class="dropdown-item" href="/#tipos-de-atencion">Tipos de atención</a></li>
+              <!-- RECURSOS DIGITALES -->
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
           </li>
-          <!-- RESERVAS -->
-          <li class="nav-item">
-            <a href="/#reservas" class="nav-link">Reservas</a>
-          </li>
-          <!-- OTRAS DUDAS -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Otras consultas
-						</a>
-						<ul class="dropdown-menu">
-							<!-- FORMAS DE PAGO -->
-							<li><a class="dropdown-item" href="/#formas-de-pago">Formas de pago</a></li>
-							<!-- TIPOS DE ATENCIÓN -->
-							<li><a class="dropdown-item" href="/#tipos-de-atencion">Tipos de atención</a></li>
-							<!-- RECURSOS DIGITALES -->
-						</ul>
-					</li>
           <!-- CONTACTO -->
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a href="/#contacto" class="nav-link">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  <header>
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-10 col-md-6 col-lg-6 mx-auto">
-          <div class="video">
-            <iframe width="100%" height="400" title="Video YouTube" style="border: 2px solid lightseagreen;"
-              src="https://www.youtube.com/embed/IX0KM7lwYmQ"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              frameborder="0" allowfullscreen></iframe>
-          </div>
+  </div>
+</nav>
+<header>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-10 col-md-6 col-lg-6 mx-auto">
+        <div class="video">
+          <iframe width="100%" height="400" title="Video YouTube" style="border: 2px solid lightseagreen;"
+          src="https://www.youtube.com/embed/IX0KM7lwYmQ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-10 col-md-6 col-lg-6 mx-auto">
-          <div class="card shadow">
-            <div class="card-body">
-              <h4 class="card-title">Taller para padres</h4>
-              <h6 class="card-subtitle">¿Por qué mi hijo se comporta así?</h6>
-              <p class="card-text">Dictado por la Psicóloga Alejandra Bravo en el Colegio Metodista Robert Johnson de
-                Alto Hospicio.
-              </p>
-            </div>
+      </div>
+      <div class="col-10 col-md-6 col-lg-6 mx-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">Taller para padres</h4>
+            <h6 class="card-subtitle">¿Por qué mi hijo se comporta así?</h6>
+            <p class="card-text">Dictado por la Psicóloga Alejandra Bravo en el Colegio Metodista Robert Johnson de
+              Alto Hospicio.
+            </p>
           </div>
         </div>
       </div>
-
     </div>
 
-  </header>
-  <hr>
-  <!-- GALERIA -->
-  <section class="galery py-3" id="galeria">
-    <h3 class="text-center display-3 text-uppercase fw-bold text-white">Galería</h3>
-    <h4 class="text-center text-white">IMAGENES DE NUESTRAS REUNIONES ONLINE Y PRESENCIAL</h4>
-    <div class="container">
-      <div class="row">
-        <!-- IMAGEN 01 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
-            Expandir
-          </button>
-        </div>
-        <!-- IMAGEN 02 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
-            Expandir
-          </button>
-        </div>
-        <!-- IMAGEN 03 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
-            Expandir
-          </button>
-        </div>
-        <!-- IMAGEN 04 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
-            Expandir
-          </button>
-        </div>
-        <!-- IMAGEN 05 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="{}">
-            Expandir
-          </button>
-        </div>
-        <!-- IMAGEN 06 -->
-        <div class="col-4 my-2 mx-auto position-relative">
-          <div class="border border-3 border-light shadow"
-            style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
-          </div>
-          <button data-url="./assets/imagenes/galeria/01.jpg" class="btn btn-light rounded-0 position-absolute"
-            style="top:50%; right: 40%;" onclick="{window.expand(this.dataset.url)}">
-            Expandir
-          </button>
-          <a name="contacto"></a>
-        </div>
+  </div>
+
+</header>
+<hr>
+<!-- GALERIA -->
+<section class="galery py-3" id="galeria">
+  <h3 class="text-center display-3 text-uppercase fw-bold text-white">Galería</h3>
+  <h4 class="text-center text-white">IMAGENES DE NUESTRAS REUNIONES ONLINE Y PRESENCIAL</h4>
+  <div class="container">
+    <div class="row">
+      <!-- IMAGEN 01 -->
+      <div class="col-4 my-2 mx-auto position-relative">
+        <div class="border border-3 border-light shadow"
+        style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
       </div>
+      <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
+        Expandir
+      </button>
     </div>
-  </section>
-  	<!-- BS-JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-		crossorigin="anonymous"></script>
-  <!-- SW2 -->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./assets/js/galeria.js"></script>
+    <!-- IMAGEN 02 -->
+    <div class="col-4 my-2 mx-auto position-relative">
+      <div class="border border-3 border-light shadow"
+      style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
+    </div>
+    <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
+      Expandir
+    </button>
+  </div>
+  <!-- IMAGEN 03 -->
+  <div class="col-4 my-2 mx-auto position-relative">
+    <div class="border border-3 border-light shadow"
+    style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
+  </div>
+  <button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
+    Expandir
+  </button>
+</div>
+<!-- IMAGEN 04 -->
+<div class="col-4 my-2 mx-auto position-relative">
+  <div class="border border-3 border-light shadow"
+  style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
+</div>
+<button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="">
+  Expandir
+</button>
+</div>
+<!-- IMAGEN 05 -->
+<div class="col-4 my-2 mx-auto position-relative">
+  <div class="border border-3 border-light shadow"
+  style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
+</div>
+<button class="btn btn-light rounded-0 position-absolute" style="top:50%; right: 40%;" onclick="{}">
+  Expandir
+</button>
+</div>
+<!-- IMAGEN 06 -->
+<div class="col-4 my-2 mx-auto position-relative">
+  <div class="border border-3 border-light shadow"
+  style="background: url(./assets/imagenes/galeria/01.jpg); background-size: cover;height: 120px">
+</div>
+<button data-url="./assets/imagenes/galeria/01.jpg" class="btn btn-light rounded-0 position-absolute"
+style="top:50%; right: 40%;" onclick="{window.expand(this.dataset.url)}">
+Expandir
+</button>
+<a name="contacto"></a>
+</div>
+</div>
+</div>
+</section>
+<!-- BS-JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+<!-- SW2 -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/galeria.js"></script>
 </body>
 
 </html>
